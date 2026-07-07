@@ -994,9 +994,11 @@ iframe {
         display: none;
      }
      .hero {
-        font-size: 7vw;
+        font-size: 5vw;
         text-shadow: 0 0 10px black;
         letter-spacing: 10px;
+        position: absolute;
+        top: 378px;
      }
     .image img {
         height: 1100px;
