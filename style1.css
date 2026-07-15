@@ -1435,4 +1435,53 @@ iframe {
     width: 300%;
     height: auto;
    }
-}   
+   /* お料理セクション：絶対配置をやめて通常フローに戻す
+      （はみ出し分を .gallery の top で逃がす必要がなくなる） */
+   .food img {
+    height: auto;
+    width: 100%;
+    margin-left: 0;
+   }
+   .food p,
+   .food .text7,
+   .food .text8 {
+    position: static;
+    top: auto;
+    left: auto;
+    margin-left: 30px;
+   }
+   .food p {
+    margin-top: 20px;
+   }
+   .food .text7 {
+    margin-top: 15px;
+    padding-bottom: 0;
+   }
+   .food .text8 {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    width: fit-content;
+   }
+   .gallery {
+    top: 0;
+   }
+   .text9 {
+    margin-top: 60px;
+   }
+   /* .gallery の top ずらしを外した分、内側に隠れていた余白を詰める
+      （.oshirase は .gallery の中にある） */
+   .news-contents {
+    margin-bottom: 0;
+    padding-bottom: 60px;
+   }
+   .oshirase {
+    padding-bottom: 60px;
+   }
+}
+/* 701〜900px：見出しの左インデントだけ調整（700px以下は既存値を維持） */
+@media (min-width: 701px) and (max-width: 900px) {
+   .text9,
+   .text10 {
+    margin-left: 30px;
+   }
+}
