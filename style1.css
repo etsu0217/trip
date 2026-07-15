@@ -1062,15 +1062,14 @@ iframe {
        max-width: fit-content;
     }
     .food p {
+        position: static;
         font-size: 16px;
         font-weight: bold;
         text-indent: -1.5rem;
         letter-spacing: 2px;
         line-height: 28px;
-        top: auto;
-        left: auto;
         margin-left: 30px;
-        margin-top: 10px;
+        margin-top: 20px;
     }
     .room1 {
         margin-top: 50px;
@@ -1085,20 +1084,20 @@ iframe {
 
     }
     .food .text7  {
+        position: static;
         font-size: 13px;
-        top: auto;
-        margin-top: 80px;
-        left: 2vw;
-        margin-left: 20px;
+        margin-top: 15px;
+        margin-left: 30px;
         padding-bottom: 0;
         letter-spacing: 1px;
     }
     .food .text8 {
+        position: static;
         font-size: 13px;
-        margin-top: 150px;
-        top: auto;
-        left: 29px;
-        margin-left: 0;
+        margin-top: 15px;
+        margin-left: 30px;
+        margin-bottom: 40px;
+        width: fit-content;
     }
     .room .text5 {
         font-size:11px;
@@ -1108,7 +1107,7 @@ iframe {
     }
     .text9 {
         font-size: 1.5rem;
-        margin-top: 0;
+        margin-top: 60px;
         margin-left: 15px;
     }
     .morning3 {
@@ -1325,7 +1324,7 @@ iframe {
     }
 
     .gallery {
-        top: 400px;
+        top: 0;
     }
     .menu_nav_header {
         gap: 10px;
@@ -1390,7 +1389,7 @@ iframe {
         margin-top: 50px;
     }
    .room1 .text6 {
-        margin-bottom: 100px;
+        margin-bottom: 50px;
    }
    .food2 {
     display: none;
