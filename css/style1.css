@@ -1062,15 +1062,14 @@ iframe {
        max-width: fit-content;
     }
     .food p {
+        position: static;
         font-size: 16px;
         font-weight: bold;
         text-indent: -1.5rem;
         letter-spacing: 2px;
         line-height: 28px;
-        top: auto;
-        left: auto;
         margin-left: 30px;
-        margin-top: 10px;
+        margin-top: 20px;
     }
     .room1 {
         margin-top: 50px;
@@ -1085,20 +1084,20 @@ iframe {
 
     }
     .food .text7  {
+        position: static;
         font-size: 13px;
-        top: auto;
-        margin-top: 80px;
-        left: 2vw;
-        margin-left: 20px;
+        margin-top: 15px;
+        margin-left: 30px;
         padding-bottom: 0;
         letter-spacing: 1px;
     }
     .food .text8 {
+        position: static;
         font-size: 13px;
-        margin-top: 150px;
-        top: auto;
-        left: 29px;
-        margin-left: 0;
+        margin-top: 15px;
+        margin-left: 30px;
+        margin-bottom: 40px;
+        width: fit-content;
     }
     .room .text5 {
         font-size:11px;
@@ -1108,7 +1107,7 @@ iframe {
     }
     .text9 {
         font-size: 1.5rem;
-        margin-top: 0;
+        margin-top: 60px;
         margin-left: 15px;
     }
     .morning3 {
@@ -1325,7 +1324,7 @@ iframe {
     }
 
     .gallery {
-        top: 400px;
+        top: 0;
     }
     .menu_nav_header {
         gap: 10px;
@@ -1390,7 +1389,7 @@ iframe {
         margin-top: 50px;
     }
    .room1 .text6 {
-        margin-bottom: 100px;
+        margin-bottom: 50px;
    }
    .food2 {
     display: none;
@@ -1436,4 +1435,53 @@ iframe {
     width: 300%;
     height: auto;
    }
-}   
+   /* お料理セクション：絶対配置をやめて通常フローに戻す
+      （はみ出し分を .gallery の top で逃がす必要がなくなる） */
+   .food img {
+    height: auto;
+    width: 100%;
+    margin-left: 0;
+   }
+   .food p,
+   .food .text7,
+   .food .text8 {
+    position: static;
+    top: auto;
+    left: auto;
+    margin-left: 30px;
+   }
+   .food p {
+    margin-top: 20px;
+   }
+   .food .text7 {
+    margin-top: 15px;
+    padding-bottom: 0;
+   }
+   .food .text8 {
+    margin-top: 15px;
+    margin-bottom: 40px;
+    width: fit-content;
+   }
+   .gallery {
+    top: 0;
+   }
+   .text9 {
+    margin-top: 60px;
+   }
+   /* .gallery の top ずらしを外した分、内側に隠れていた余白を詰める
+      （.oshirase は .gallery の中にある） */
+   .news-contents {
+    margin-bottom: 0;
+    padding-bottom: 60px;
+   }
+   .oshirase {
+    padding-bottom: 60px;
+   }
+}
+/* 701〜900px：見出しの左インデントだけ調整（700px以下は既存値を維持） */
+@media (min-width: 701px) and (max-width: 900px) {
+   .text9,
+   .text10 {
+    margin-left: 30px;
+   }
+}
